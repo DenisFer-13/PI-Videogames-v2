@@ -1,4 +1,6 @@
-const { Videogame, conn } = require('../../src/db.js');
+const { conn } = require('../../src/db.js');
+const Videogame = require('../../src/models/Videogame')
+const Genre = require('../../src/models/Genre')
 const { expect } = require('chai');
 
 describe('Videogame model', () => {
@@ -7,7 +9,7 @@ describe('Videogame model', () => {
       console.error('Unable to connect to the database:', err);
     }));
   describe('Validators', () => {
-    beforeEach(() => Videogame.sync({ force: true }));
+/*     beforeEach(() => Videogame.sync({ force: true })); */
     describe('name', () => {
       it('should throw an error if name is null', (done) => {
         Videogame.create({})
@@ -15,7 +17,7 @@ describe('Videogame model', () => {
           .catch(() => done());
       });
       it('should work when its a valid name', () => {
-        Recipe.create({ name: 'Super Mario Bros' });
+        Genre.create({ name: 'Super Mario Bros' });
       });
     });
   });

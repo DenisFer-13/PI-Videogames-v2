@@ -1,0 +1,158 @@
+.navbar {
+    display: inline;
+}
+.div {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    height: 80px;
+    background-color: #212121;
+    border-bottom: solid 2px #0D7377;
+    box-shadow: 2px 2px 2px 2px #14FFEC;
+}
+.logo {
+    margin-left: 8vw;
+}
+.searchbar {
+    width: 90%;
+    height: 60%;
+}
+.form {
+    height: 100%;
+}
+.input {
+    display: inline;
+    width: 70%;
+    height: 90%;
+    padding: 0;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.582);
+    border: solid 1px white;
+    border-radius: 4px;
+    box-shadow: inset 0 0 0.5em 0 #14FFEC, 0 0 0.5em 0 #14FFEC;
+    color: white;
+    font-family: Courier, monospace;
+    font-size: 1vw;
+    padding-left: 10px;
+}
+.button {
+    height: 95%;
+    width: 8vw;
+    margin-left: 1vw;
+    background-color: rgba(0, 0, 0, 0.582);
+    color: white;
+    border: solid 1px white;
+    border-radius: 4px;
+    box-shadow: inset 0 0 0.5em 0 #14FFEC, 0 0 0.5em 0 #14FFEC;
+    transition: background-color 100ms linear, box-shadow 100ms linear;
+}
+.button:hover {
+    background: #14FFEC;
+    color: #252525;
+    text-shadow: none;
+    box-shadow: 0 0 2em 0.1em #14FFEC;
+}
+.divhome {
+    margin-top: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #323232d7;
+    border: solid 2px #14FFEC;
+    margin-left: 10%;
+    margin-right: 8%;
+    border-radius: 5px;
+}
+.gamediv {
+    margin-top: 2vw;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.divbuttons {
+    display: flex;
+    height: 3vw;
+    align-content: center;
+    margin-right: 1vw;
+}
+.button {
+    cursor: pointer;
+    height: 100%;
+    width: 15vw;
+    background-color: rgba(0, 0, 0, 0.582);
+    color: white;
+    border: solid 1px white;
+    border-radius: 4px;
+    box-shadow: inset 0 0 0.5em 0 #14FFEC, 0 0 0.5em 0 #14FFEC;
+    transition: background-color 100ms linear, box-shadow 100ms linear;
+}
+.containerfilter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 7vw;
+    margin-right: 1vw;
+}
+.filter {
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+}
+.sort {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.optionsBy {
+    width: 50%;
+}
+.select {
+    width: 13vw;
+}
+.card {
+    width: 23%;
+    background-color: #0d7477a9;
+    height: 28vw;
+    margin-bottom: 2vw;
+    border-radius: 20px;
+    border: solid 3px black;
+    color: black;
+    text-decoration: none;
+    transition: transform .1s;
+    font-size: 18px;
+    color: white;
+}
+.card:hover {
+    background-color: #14FFEC;
+    transform: scale(1.03);
+    box-shadow: 0 2px 5px white;
+    color: black;
+}
+.paginate {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+}
+.paginatediv {
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.li {
+    width: 5vw;
+    height: 5vw;
+}
+.buttonli {
+    background-color: rgba(0, 0, 0, 0.582);
+    color: white;
+    box-shadow: 0 0 0.5em 0 #14FFEC;
+    font-size: 20px;
+    transition: transform .1s;
+}
+.buttonli:hover {
+    cursor: pointer;
+    background-color: blueviolet;
+    color: white;
+    transform: scale(1.3);
+}

@@ -1,0 +1,14 @@
+.card h3 {
+    width: 100%;
+    height: 50px;
+}
+.img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 17px;
+}
+.h3, h4, p {
+    margin: 0;
+    padding: 0;
+}

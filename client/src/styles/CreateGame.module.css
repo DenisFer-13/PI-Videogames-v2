@@ -1,0 +1,75 @@
+.div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+    background-color: #212121bb;
+    margin: 200px;
+    padding: 10px;
+    border-radius: 15px;
+}
+.h3create {
+    margin: 8px;
+    -webkit-text-stroke: 2px black;
+    color: white;
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1.5px;
+}
+.form {
+    width: 800px;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+}
+.input {
+    width: 80%;
+    height: 30px;
+    padding: 4px;
+    margin-left: 10px;
+}
+.divinput {
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    align-items: center;
+}
+.button {
+    cursor: pointer;
+    height: 2.5vw;
+    width: 7vw;
+    background-color: rgba(0, 0, 0, 0.582);
+    color: white;
+    border: solid 1px white;
+    border-radius: 4px;
+    box-shadow: inset 0 0 0.5em 0 #14FFEC, 0 0 0.5em 0 #14FFEC;
+    transition: background-color 100ms linear, box-shadow 100ms linear;
+}
+.button:hover {
+    background: #14FFEC;
+    color: #252525;
+    text-shadow: none;
+    box-shadow: 0 0 2em 0.1em #14FFEC;
+}
+.li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pclose {
+    cursor: pointer;
+    color: red;
+    background-color: white;
+    padding: 0 4px 0 4px;
+    border-radius: 2px;
+    transition: transform .2s;
+}
+.pclose:hover {
+    transform: scale(1.2);
+}
+.textarea {
+    width: 80.7%;
+    height: 6vw;
+    resize: none;
+}

@@ -28,7 +28,7 @@ module.exports = (sequelize) => {
         min: 1,
         max: 5,
       },
-      allowNull: true,
+      allowNull: false,
     },
     platforms: {
       type: DataTypes.ARRAY(DataTypes.STRING),

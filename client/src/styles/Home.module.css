@@ -1,0 +1,140 @@
+.button {
+  cursor: pointer;
+  height: 95%;
+  width: 8vw;
+  margin-left: 1vw;
+  background-color: rgba(0, 0, 0, 0.582);
+  color: white;
+  border: solid 1px white;
+  border-radius: 4px;
+  box-shadow: inset 0 0 0.5em 0 #14ffec, 0 0 0.5em 0 #14ffec;
+  transition: background-color 100ms linear, box-shadow 100ms linear;
+}
+.button:hover {
+  background: #14ffec;
+  color: #252525;
+  text-shadow: none;
+  box-shadow: 0 0 2em 0.1em #14ffec;
+}
+.divhome {
+  margin-top: 1vw;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #323232d7;
+  border: solid 2px #14ffec;
+  margin-left: 10%;
+  margin-right: 8%;
+  border-radius: 5px;
+}
+.divbuttons {
+  display: flex;
+  height: 3vw;
+  align-content: center;
+  margin-right: 1vw;
+}
+.gamediv {
+  margin-top: 2vw;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.card {
+  width: 23%;
+  background-color: #0d7477a9;
+  height: 28vw;
+  margin-bottom: 2vw;
+  border-radius: 20px;
+  border: solid 3px black;
+  color: black;
+  text-decoration: none;
+  transition: transform 0.1s;
+  font-size: 18px;
+  color: white;
+}
+.card:hover {
+  background-color: #14ffec;
+  transform: scale(1.03);
+  box-shadow: 0 2px 5px white;
+  color: black;
+}
+.paginate {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+}
+.paginatediv {
+  justify-content: center;
+  padding-bottom: 20px;
+}
+.li {
+  width: 5vw;
+  height: 5vw;
+}
+.buttonli {
+  background-color: rgba(0, 0, 0, 0.582);
+  color: white;
+  box-shadow: 0 0 0.5em 0 #14ffec;
+  font-size: 20px;
+  transition: transform 0.1s;
+}
+.buttonli:hover {
+  cursor: pointer;
+  background-color: blueviolet;
+  color: white;
+  transform: scale(1.3);
+}
+.containerfilter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 6vw;
+  margin-right: 1vw;
+}
+.filter {
+  width: 100%;
+  display: flex;
+}
+.sort {
+  width: 100%;
+  display: flex;
+}
+.optionsBy {
+  width: 50%;
+}
+.select {
+  width: 13vw;
+  display: flex;
+}
+.divLP {
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  margin-bottom: 40px;
+}
+.divLoad {
+  font-size: 20px;
+}
+.spinner {
+  display: flex;
+  align-items: flex-end;
+  border: 10px solid rgba(0, 0, 0, 0.1);
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+  border-left-color: #14ffec;
+  animation: spin 2s linear infinite;
+  box-shadow: inset 0 0 0.5em 0 #14ffec, 0 0 0.5em 0 #14ffec;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

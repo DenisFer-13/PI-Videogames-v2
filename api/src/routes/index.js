@@ -165,6 +165,7 @@ const getAllGamesApiDb = async () => {
       rating: index.rating,
       genre: index.genres.map((index) => index.name),
       platforms: index.platforms,
+      createdInDb: index.createdInDb,
     };
   });
   const totalGamesApiDb = gamesApi.concat(gamesDb);

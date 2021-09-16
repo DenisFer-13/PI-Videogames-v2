@@ -17,6 +17,15 @@ const initialState = {
   totalGames: [],
   gameDetail: [],
   genres: [],
+  objectNull: [
+    {
+      id: "404notfound",
+      name: "There are no games for this search.",
+      background_image:
+        "https://onlinezebra.com/wp-content/uploads/2019/01/error-404-not-found.jpg",
+      rating: 'Click for go back!'
+    },
+  ],
 };
 
 function rootReducer(state = initialState, action) {
@@ -59,7 +68,8 @@ function rootReducer(state = initialState, action) {
             );
       return {
         ...state,
-        gamesRender: gamesFiltered,
+        gamesRender:
+          gamesFiltered.length > 0 ? gamesFiltered : state.objectNull,
       };
     case ALPHABETIC_ORDER:
       let gamesByAlphabeth =

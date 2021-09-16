@@ -29,7 +29,7 @@ export default function Home() {
   useEffect(() => {
     dispatch(getAllGenres());
   }, [dispatch]);
-
+    
   const paginate = (pageNumber) => {
     setCurretPage(pageNumber);
   };

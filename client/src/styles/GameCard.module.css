@@ -12,3 +12,11 @@
     margin: 0;
     padding: 0;
 }
+@media screen and (max-width: 720px) {
+    h4, p {
+        display: none;
+    }
+    .h3 {
+        margin-bottom: 20px;
+    }
+}

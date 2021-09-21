@@ -4,7 +4,6 @@ import { useHistory } from "react-router";
 import { createGame, getAllGames, resetFilters, resetHome } from "../actions";
 import style from "../styles/CreateGame.module.css";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
 
 export default function CreateGame() {
   const genres = useSelector((state) => state.genres);
@@ -114,7 +113,8 @@ export default function CreateGame() {
     }
   }
 
-  function handleDelete() {
+  function handleDelete(e) {
+    console.log(e.target.value)
     input.genre.pop();
     setInput({
       ...input,
@@ -249,6 +249,17 @@ export default function CreateGame() {
             </p>
             <li>&nbsp;&nbsp;{input.genre.map((index) => index + " - ")}</li>
           </ul>
+          {/* {input.genre.length > 0
+            ? input.genre.map((index) => {
+              console.log(index)
+                return (
+                  <li>
+                    <div onClick={(index) => handleDelete(index)}>X</div>
+                    <p>{index}</p>
+                  </li>
+                );
+              })
+            : "You should select one genre."} */}
           <button className={style.button} type="submit">
             CREATE GAME
           </button>

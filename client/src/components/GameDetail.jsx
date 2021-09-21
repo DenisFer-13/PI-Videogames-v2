@@ -19,7 +19,7 @@ export default function GameDetail({ id }) {
 
   return (
     <div>
-      <Link to="/videogames">
+      <Link className={style.a} to="/videogames">
         <button className={style.goback}>Go back</button>
       </Link>
       {game.length > 0 ? (
